@@ -541,6 +541,8 @@ button {
           content: "\ea03"; }
 
 .toggle {
+  background-color: rgba(255, 255, 255, .25);
+  backdrop-filter: blur(3px);
   -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);

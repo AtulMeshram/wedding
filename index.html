@@ -168,6 +168,25 @@
 			transform: scale(0)
 		  }
 		}
+
+		.play_pause {
+			height: 72px;
+			width: 72px;
+			background-color: rgba(0, 0, 0, .25);
+			backdrop-filter: blur(4px);
+			border-radius: 64px 0 0 0;
+			position: absolute;
+			bottom: 0px;
+			right: 0px;
+			z-index: 9999;
+		}
+		.audio_text {
+			text-align: center;
+			font-size: 2.5em;
+			position: absolute;
+			top: 32px;
+			left: 30px;
+		}
 	  </style>
 </head>
 <body>
@@ -182,15 +201,9 @@
 		</div>
 	  </div>
 	
-<!-- 	<iframe src="https://atulmeshram.github.io/wedding/assets/audio/music.mp3" allow="autoplay" id="audio" hidden ></iframe>
-
-	    <audio id="song" class="music" autoplay>
-	        <source src="https://atulmeshram.github.io/wedding/assets/audio/music.mp3" type="audio/mp3">
-	    </audio> -->
-
 	<div class="music">
-        	<audio src="./assets/audio/music.mp3" id="my_audio" loop="loop"></audio> 
-      	</div>
+		<audio src="./assets/audio/music.mp3" id="my_audio" loop="loop"></audio> 
+	</div>
 	
 	<div id="container" class="wrapper">
 		<ul id="scene" class="scene unselectable"
@@ -243,6 +256,14 @@
 		</ul>
 
 		<canvas id="bubble-canvas"></canvas>
+
+		<div class="play_pause">
+			<div class="audio_text">🔊</div>
+		</div>
+
+		<div class="music">
+			<audio src="./assets/audio/music.mp3" id="my_audio" loop="loop"></audio> 
+		</div>
 
 		<section id="about" class="wrapper about hide accelerate">
 			<div class="cell accelerate">
@@ -375,8 +396,25 @@
 	</script>
 	<script>window.onload = function () { setTimeout(function () { $(".loader__wrapper").fadeOut(300)}, 1000) }</script>
 	<script>
-		$(document).on('click', function(){
-		    document.getElementById("my_audio").play();
+		// $(document).on('click', function(){
+		//     document.getElementById("my_audio").play();
+		// });
+
+		$(document).ready(function(){
+			var audio = document.getElementById("my_audio");
+			var audio_text = document.querySelector(".audio_text");
+
+			$(".play_pause").click(function() {
+				if(audio.paused){
+					audio.play();
+					audio_text.innerHTML = "🔇";
+					console.log("Playing");
+				}else{
+					audio.pause();
+					audio_text.innerHTML = "🔊";
+					console.log("Paused");
+				}
+			});
 		});
 	</script>
 </body>
