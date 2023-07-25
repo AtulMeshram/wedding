@@ -179,7 +179,7 @@
 	  </div>
 	<iframe src="https://atulmeshram.github.io/wedding/assets/audio/music.mp3" allow="autoplay" id="audio" hidden ></iframe>
 
-    <audio id="song" autoplay>
+    <audio id="song" class="music" autoplay>
         <source src="https://atulmeshram.github.io/wedding/assets/audio/music.mp3" type="audio/mp3">
     </audio>
 	<div id="container" class="wrapper">
@@ -365,15 +365,9 @@
 	</script>
 	<script>window.onload = function () { setTimeout(function () { $(".loader__wrapper").fadeOut(300)}, 1000) }</script>
 	<script>
-		window.onload = (event) => {
-		// if (navigator.getAutoplayPolicy("mediaelement") === "allowed") {
-		//   // The video element will autoplay with audio.
-		// } else if (navigator.getAutoplayPolicy("mediaelement") === "allowed-muted") {
-		//   // Mute audio on video
-		//   video.muted = true;
-		// }
-		document.querySelector("song").play();
-	}
+		$(document).ready(function() {
+    			$(".music").play();
+		});
 	</script>
 </body>
 </html>
