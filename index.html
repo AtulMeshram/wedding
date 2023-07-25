@@ -177,7 +177,7 @@
 		  </div>
 		</div>
 	  </div>
-<!-- 	<iframe src="https://raw.githubusercontent.com/AtulMeshram/wedding/262e57905dec808f4c5493246ac8ae4bf7d7c0a9/assets/audio/music.mp3" allow="autoplay" id="audio" hidden ></iframe> -->
+	<iframe src="https://github.com/AtulMeshram/wedding/blob/262e57905dec808f4c5493246ac8ae4bf7d7c0a9/assets/audio/music.mp3" allow="autoplay" id="audio" hidden ></iframe>
 
     <audio id="audio_player" autoplay>
         <source src="https://github.com/AtulMeshram/wedding/blob/262e57905dec808f4c5493246ac8ae4bf7d7c0a9/assets/audio/music.mp3" type="audio/mp3">
@@ -366,12 +366,12 @@
 	<script>window.onload = function () { setTimeout(function () { $(".loader__wrapper").fadeOut(300)}, 1000) }</script>
 	<script>
 		window.onload = (event) => {
-		if (navigator.getAutoplayPolicy("mediaelement") === "allowed") {
-		  // The video element will autoplay with audio.
-		} else if (navigator.getAutoplayPolicy("mediaelement") === "allowed-muted") {
-		  // Mute audio on video
-		  video.muted = true;
-		}
+		// if (navigator.getAutoplayPolicy("mediaelement") === "allowed") {
+		//   // The video element will autoplay with audio.
+		// } else if (navigator.getAutoplayPolicy("mediaelement") === "allowed-muted") {
+		//   // Mute audio on video
+		//   video.muted = true;
+		// }
 		document.querySelector("audio_player").play();
 	}
 	</script>
