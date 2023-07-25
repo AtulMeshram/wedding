@@ -757,7 +757,7 @@ button {
         line-height: 1.3em; }
 
   .toggle {
-    /* margin: -28px; */
+    margin: -28px;
     bottom: 10%; }
 
   }

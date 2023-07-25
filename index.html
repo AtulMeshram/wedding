@@ -183,12 +183,30 @@
 			cursor: pointer;
 		}
 		.audio_text {
+			height: 32px;
+			width: 32px;
 			text-align: center;
-			font-size: 24px;
+			font-size: 28px;
 			position: absolute;
-			top: 20px;
-			left: 30px;
+			top: 4px;
+			left: 24px;
 			cursor: pointer;
+			font-family: 'icons';
+			color: #fff;
+		}
+		.vol_off::before{
+			font-family: 'icons';
+			content: "\ea04";
+			color: #fff;
+			height: 32px;
+			width: 32px;
+		}
+		.vol_on::before{
+			font-family: 'icons';
+			content: "\ea05";
+			color: #fff;
+			height: 32px;
+			width: 32px;
 		}
 	  </style>
 </head>
@@ -260,9 +278,10 @@
 
 		<canvas id="bubble-canvas"></canvas>
 
-		<div class="play_pause">
-			<div class="audio_text">🔊</div>
-		</div>
+		<button class="play_pause">
+			<!-- <div class="audio_text">🔊</div> -->
+			<div class="audio_text"><div class="vol_on"></div></div>
+		</button>
 
 		<div class="music">
 			<audio src="./assets/audio/music.mp3" id="my_audio" loop="loop"></audio> 
@@ -410,11 +429,13 @@
 			$(".play_pause").click(function() {
 				if(audio.paused){
 					audio.play();
-					audio_text.innerHTML = "🔇";
+					audio_text.innerHTML = "<div class='vol_off'></div>";
+						// 🔇";
 					console.log("Playing");
-				}else{
+				}else {
 					audio.pause();
-					audio_text.innerHTML = "🔊";
+					audio_text.innerHTML = "<div class='vol_on'></div>";
+					// "🔊";
 					console.log("Paused");
 				}
 			});
