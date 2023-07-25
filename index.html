@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+
+	<title>Atul ❤️ Shireesha</title>
+
+	<!-- Behavioral Meta Data -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<!-- Core Meta Data -->
+	<meta name="author" content="Atul Meshram">
+	<meta name=title content="Atul ❤️ Shireesha">
+	<meta name="description" content="Atul & Shireesha invite you to their wedding celebration on Sunday 26th November, 2023.">
+	<meta name="keywords" content="atul, shireesha, wedding, celebration, november, 26, 2023, windflower, mysore, karnataka, india">
+	<meta name=theme-color content=#FFFFFF>
+
+	<!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="favicons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="favicons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicons/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="favicons/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="favicons/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="Atul ❤️ Shireesha"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="favicons/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="favicons/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="favicons/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="favicons/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="favicons/mstile-310x310.png" />
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="favicons/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="favicons/favicon-32x32.png" type="image/png">
+	<link rel="shortcut icon" href="http://atul.one/favicon-32x32.png" type="image/png">
+
+	<!-- Open Graph Meta Data -->
+	<meta property="og:description" content="Atul & Shireesha invite you to their wedding celebration on Sunday 26th November, 2023.">
+	<meta property="og:image" content="#">
+	<meta property="og:site_name" content="Atul ❤️ Shireesha">
+	<meta property="og:title" content="Atul ❤️ Shireesha">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="#">
+
+	<!-- Twitter Card Meta Data -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="#">
+	<meta name="twitter:creator" content="Atul Meshram">
+	<meta name="twitter:title" content="Atul ❤️ Shireesha">
+	<meta name="twitter:description" content="Atul & Shireesha invite you to their wedding celebration on Sunday 26th November, 2023.">
+	<meta name="twitter:image" content="#">
+
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="assets/styles/styles.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/styles/wedding.css"/>
+
+	<style>
+		.loader__wrapper {
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  width: 100vw;
+		  height: 100vh;
+		  display: -webkit-box;
+		  display: flex;
+		  -webkit-box-pack: center;
+		  justify-content: center;
+		  -webkit-box-align: center;
+		  align-items: center;
+		  background-color: rgba(0, 0, 0, .9);
+		  z-index: 99999;
+		  position: fixed
+		}
+	
+		.dot {
+		  display: -webkit-box;
+		  display: flex;
+		  -webkit-box-orient: horizontal;
+		  -webkit-box-direction: normal;
+		  flex-flow: row nowrap;
+		  -webkit-box-pack: justify;
+		  justify-content: space-between
+		}
+	
+		.loader__wrapper .dot {
+		  width: 120px;
+		  height: 20px
+		}
+	
+		.dot__item {
+		  display: inline-block;
+		  width: 20px;
+		  height: 20px;
+		  border-radius: 100%;
+		  transfrom: scale(0);
+		  -webkit-animation-name: scale;
+		  animation-name: scale;
+		  -webkit-animation-duration: 1s;
+		  animation-duration: 1s;
+		  -webkit-animation-iteration-count: infinite;
+		  animation-iteration-count: infinite;
+		  -webkit-animation-timing-function: linear;
+		  animation-timing-function: linear
+		}
+	
+		.dot__item1 {
+		  -webkit-animation-delay: 0s;
+		  animation-delay: 0s;
+		  background-color: #fff
+		}
+	
+		.dot__item2 {
+		  -webkit-animation-delay: .25s;
+		  animation-delay: .25s;
+		  background-color: #fff
+		}
+	
+		.dot__item3 {
+		  -webkit-animation-delay: .5s;
+		  animation-delay: .5s;
+		  background-color: #fff
+		}
+	
+		@-webkit-keyframes scale {
+		  0% {
+			-webkit-transform: scale(0);
+			transform: scale(0)
+		  }
+	
+		  50% {
+			-webkit-transform: scale(1);
+			transform: scale(1)
+		  }
+	
+		  100% {
+			-webkit-transform: scale(0);
+			transform: scale(0)
+		  }
+		}
+	
+		@keyframes scale {
+		  0% {
+			-webkit-transform: scale(0);
+			transform: scale(0)
+		  }
+	
+		  50% {
+			-webkit-transform: scale(1);
+			transform: scale(1)
+		  }
+	
+		  100% {
+			-webkit-transform: scale(0);
+			transform: scale(0)
+		  }
+		}
+	  </style>
+
+</head>
+<body>
+	<div class=loader__wrapper>
+		<div class=dot>
+		  <div class="dot__item dot__item1">
+		  </div>
+		  <div class="dot__item dot__item2">
+		  </div>
+		  <div class="dot__item dot__item3">
+		  </div>
+		</div>
+	  </div>
+	<iframe src="./assets/audio/music.mp3" allow="autoplay" id="audio" hidden ></iframe>
+
+    <audio id="player" autoplay>
+        <source src="./assets/audio/music.mp3" type="audio/mp3">
+        <source src="./assets/audio/music.mp3" type="audio/org">
+    </audio>
+	<div id="container" class="wrapper">
+		<ul id="scene" class="scene unselectable"
+			data-friction-x="0.1"
+			data-friction-y="0.1"
+			data-scalar-x="25"
+			data-scalar-y="15">
+			<li class="layer" data-depth="0.00"></li>
+			<li class="layer" data-depth="0.10"><div class="background_1"></div></li>
+			<!-- Wedding Card -->
+
+			<li class="layer" data-depth="0.06"><div class="vine_bg_4"></div></li>
+			<li class="layer" data-depth="0.04"><div class="vine_bg_1"></div></li>
+			<li class="layer" data-depth="0.04"><div class="vine_bg_2"></div></li>
+			<li class="layer" data-depth="0.06"><div class="vine_bg_3"></div></li>
+			
+			<li class="layer" data-depth="0.05"><div class="frame__1"></div></li>
+
+			<li class="layer" data-depth="0.20"><h1 class="text_center text_first">TOGETHER <br> WITH THEIR FAMILIES</h1></li>
+			<li class="layer" data-depth="0.30"><h1 class="text_center and">&</h1></li>
+			<li class="layer" data-depth="0.30"><h1 class="text_center name_first">Atul</h1></li>
+			<li class="layer" data-depth="0.30"><h1 class="text_center name_second">Shireesha</h1></li>
+			<li class="layer" data-depth="0.20"><h1 class="text_center text_second">INVITE YOU TO THEIR WEDDING CELEBRATION</h1></li>
+			<li class="layer" data-depth="0.20"><h1 class="text_center text_day">ON SUNDAY</h1></li>
+			<li class="layer" data-depth="0.20"><h1 class="text_center text_date"><b>26</b><sup>TH</sup>&nbsp; NOVEMBER, 2023 </h1></li>
+			<li class="layer" data-depth="0.20"><h1 class="text_center text_time">FROM <b>6:00 PM</b>&nbsp;ONWARDS AT</h1></li>
+			<li class="layer" data-depth="0.20"><h1 class="text_center text_venue">THE WINDFLOWER RESORT</h1></li>
+			<li class="layer" data-depth="0.20"><h1 class="text_center text_address">MYSORE, KARNATAKA, INDIA</h1></li>
+			<li class="layer" data-depth="0.20"><h1 class="text_center text_footnote">TIPI RECEPTION & COCKTAIL BAR</h1></li>
+
+			<li class="layer" data-depth="0.04"><div class="flower__1 vines-swing-8s"></div></li>
+			<li class="layer" data-depth="0.06"><div class="vine__3 vines-swing-6s"></div></li>
+			<li class="layer" data-depth="0.08"><div class="vine__4 vines-swing-7s"></div></li>
+			<li class="layer" data-depth="0.10"><div class="vine__1 vines-swing-5s"></div></li>
+			<li class="layer" data-depth="0.14"><div class="flower__3 vines-swing-7s"></div></li>
+			<li class="layer" data-depth="0.14"><div class="flower__5 vines-swing-7s"></div></li>
+			<li class="layer" data-depth="0.16"><div class="flower__2 vines-swing-6s"></div></li>
+			<li class="layer" data-depth="0.12"><div class="flower__4 vines-swing-6s"></div></li>
+			<li class="layer" data-depth="0.18"><div class="vine__2 vines-swing-7s"></div></li>
+			
+			<li class="layer" data-depth="0.10"><div class="leaf__9 vines-swing-6s"></div></li>
+			<li class="layer" data-depth="0.04"><div class="leaf__2 vines-swing-8s"></div></li>
+			<li class="layer" data-depth="0.08"><div class="leaf__1 vines-swing-7s"></div></li>
+			<li class="layer" data-depth="0.10"><div class="leaf__4 vines-swing-6s"></div></li>
+			<li class="layer" data-depth="0.12"><div class="leaf__3 vines-swing-8s"></div></li>
+			<li class="layer" data-depth="0.14"><div class="leaf__6 vines-swing-6s"></div></li>
+			<li class="layer" data-depth="0.10"><div class="leaf__8 vines-swing-8s"></div></li>
+			<li class="layer" data-depth="0.08"><div class="leaf__7 vines-swing-7s"></div></li> 
+			<!-- Wedding Card-->
+		</ul>
+
+		<canvas id="bubble-canvas"></canvas>
+
+		<section id="about" class="wrapper about hide accelerate">
+			<div class="cell accelerate">
+				<div class="cables center accelerate">
+					<div class="panel accelerate">
+						<header>
+							<h1>Join us in our</h1>
+							<h2> happiness!</h2>
+						</header>
+						<p>Can't wait to celebrate auspicious moment of our family with you!</p>
+						<p>Just a ping away for any queries: <br><strong><a href="tel:+918050606549" target="_blank">+91 8050606549</a> <br> &amp; <br><a href="tel:+918296535953" target="_blank">+91 8296535953</a></strong></p>
+						
+						<ul class="links">
+							<li><a class="download" href="#">Download</a></li>
+							<li><a class="github" target="_blank" href="https://goo.gl/maps/8Y1EQvF4GQtqUsT68">Location</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<button id="toggle" class="toggle i effect-pulse">
+			<div class="cross">
+				<div class="x"></div>
+				<div class="y"></div>
+			</div>
+		</button>
+		<div id="prompt" class="wrapper prompt hide accelerate">
+			<div class="cell accelerate">
+				<div class="panel center unselectable accelerate">
+					<button id="dismiss" class="dismiss">
+						<div class="cross">
+							<div class="x"></div>
+							<div class="y"></div>
+						</div>
+					</button>
+					<div class="tilt-scene">
+						<img class="tilt" src="./assets/img/tilt.png">
+					</div>
+					<h2>Tilting is fun!</h2>
+					<p>For the best experience, check out this site on a mobile or tablet.</p>
+					<p>(iPads are the coolest)</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/scripts/js/libraries.min.js"></script>
+	<script src="assets/scripts/js/jquery.parallax.js"></script>
+	<script src="assets/scripts/js/aAF.js"></script>
+	<script src="assets/scripts/js/bubbles.js"></script>
+
+	<script>
+		// jQuery Selections
+		var $html = $('html'),
+				$container = $('#container'),
+				$prompt = $('#prompt'),
+				$toggle = $('#toggle'),
+				$about = $('#about'),
+				$scene = $('#scene');
+
+		// Hide browser menu.
+		(function() {
+			setTimeout(function(){window.scrollTo(0,0);},0);
+		})();
+
+		// Setup FastClick.
+		FastClick.attach(document.body);
+
+		// Add touch functionality.
+		if (Hammer.HAS_TOUCHEVENTS) {
+			$container.hammer({drag_lock_to_axis: true});
+			_.tap($html, 'a,button,[data-tap]');
+		}
+
+		// Add touch or mouse class to html element.
+		$html.addClass(Hammer.HAS_TOUCHEVENTS ? 'touch' : 'mouse');
+
+		// Resize handler.
+		(resize = function() {
+			$scene[0].style.width = window.innerWidth + 'px';
+			$scene[0].style.height = window.innerHeight + 'px';
+			if (!$prompt.hasClass('hide')) {
+				if (window.innerWidth < 600) {
+					$toggle.addClass('hide');
+				} else {
+					$toggle.removeClass('hide');
+				}
+			}
+		})();
+
+		// Attach window listeners.
+		window.onresize = _.debounce(resize, 200);
+		window.onscroll = _.debounce(resize, 200);
+
+		function showDetails() {
+			$about.removeClass('hide');
+			$toggle.removeClass('i');
+		}
+
+		function hideDetails() {
+			$about.addClass('hide');
+			$toggle.addClass('i');
+		}
+
+		// Listen for toggle click event.
+		$toggle.on('click', function(event) {
+			$toggle.hasClass('i') ? showDetails() : hideDetails();
+		});
+
+		// Pretty simple huh?
+		$scene.parallax();
+
+		// Check for orientation support.
+		setTimeout(function() {
+			if ($scene.data('mode') === 'cursor') {
+				$prompt.removeClass('hide');
+				if (window.innerWidth < 600) $toggle.addClass('hide');
+				$prompt.on('click', function(event) {
+					$prompt.addClass('hide');
+					if (window.innerWidth < 600) {
+						setTimeout(function() {
+							$toggle.removeClass('hide');
+						},1200);
+					}
+				});
+			}
+		},1000);
+
+	</script>
+	<script>window.onload = function () { setTimeout(function () { $(".loader__wrapper").fadeOut(300)}, 1000) }</script>
+</body>
+</html>

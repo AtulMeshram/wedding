@@ -1,0 +1,1833 @@
+/* base class */
+  .icon {
+    display: inline-block;
+    font: normal normal normal 1em/1 'icons';
+    color: inherit;
+    flex-shrink: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  /* icons */
+.icon-download::before {
+    content: "\ea02";
+  }
+  
+  .icon-location::before {
+    content: "\ea03";
+  }
+  
+.background_1 {
+    background: url(../img/Background.jpg) no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 110%;
+    min-height: 110%;
+    left: -5%;
+    top: -5%; }
+.vine_bg_1{
+    background-image: url(../img/vine_bg_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: calc(754px / 1.5);
+    height: calc(1502px / 1.5);
+    left: -2%;
+    top: -2%;
+    position: absolute;
+}
+.vine_bg_2{
+    background-image: url(../img/vine_bg_2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: calc(650px / 1.25);
+    height: calc(1143px / 1.25);
+    position: absolute;
+    right: -3%;
+    bottom: -3%;
+}
+.vine_bg_3{
+    background-image: url(../img/vine_bg_3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: calc(938px / 1.5);
+    height: calc(1031px / 1.5);
+    position: absolute;
+    right: -3%;
+    top: -3%;
+}
+.vine_bg_4{
+    background-image: url(../img/vine_bg_4.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: calc(543px / 1.25);
+    height: calc(884px / 1.25);
+    position: absolute;
+    left: -2%;
+    bottom: -2%;
+    opacity: 0.5;
+}
+.frame__1{
+    background-image: url(../img/frame__1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 90%;
+    min-height: 90%;
+    position: absolute;
+    top: 5%;
+    left: 33.33%;
+}
+.vine__1{
+    background-image: url(../img/vine__1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: calc(229px / 1.25);
+    height: calc(737px / 1.25);
+    left: -5%;
+    top: 10%;
+    position: absolute;
+}
+.vine__2{
+    background-image: url(../img/vine__2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: calc(436px / 1.5);
+    height: calc(364px / 1.5);
+    left: -5%;
+    top: 8%;
+    position: absolute;
+}
+.vine__3{
+    background-image: url(../img/vine__3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: calc(403px / 1.5);
+    height: calc(402px / 1.5);
+    left: -8%;
+    top: 3%;
+    position: absolute;
+}
+.vine__4{
+    background-image: url(../img/vine__4.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: calc(529px / 2);
+    height: calc(360px / 2);
+    left: -3%;
+    top: -5%;
+    position: absolute;
+}
+.flower__1{
+    background-image: url(../img/flower__1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: calc(663px / 1.5);
+    height: calc(360px / 1.5);
+    left: 5%;
+    top: -2%;
+    position: absolute;
+}
+.flower__2{
+    background-image: url(../img/flower__2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: calc(388px / 1.5);
+    height: calc(183px / 1.5);
+    left: -3%;
+    top: -3%;
+    position: relative;
+    background-repeat: no-repeat;
+}
+.flower__3{
+    background-image: url(../img/flower__3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: calc(496px / 2);
+    height: calc(630px / 2);
+    left: -8%;
+    top: -5%;
+    position: relative;
+}
+.flower__4{
+    background-image: url(../img/flower__4.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: calc(365px / 1.25);
+    height: calc(557px / 1.25);
+    left: -5%;
+    top: 5%;
+    position: relative;
+    rotate: -5deg;
+}
+.flower__5{
+    background-image: url(../img/flower__5.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: calc(646px / 2.5);
+    height: calc(2070px / 2.5);
+    right: -3%;
+    top: 2%;
+    position: absolute;
+    rotate: -5deg;
+}
+.leaf__1{
+    background-image: url(../img/leaf__1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: calc(422px / 1);
+    height: calc(144px / 1);
+    position: absolute;
+    right: 5%;
+    bottom: -5%;
+    rotate: 15deg;
+}
+.leaf__2{
+    background-image: url(../img/leaf__2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: calc(306px / 1.5);
+    height: calc(472px / 1.5);
+    position: absolute;
+    right: -3%;
+    bottom: -3%;
+}
+.leaf__3{
+    background-image: url(../img/leaf__3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: calc(306px / 1.5);
+    height: calc(417px / 1.5);
+    position: absolute;
+    right: -5%;
+    bottom: 8%;
+}
+.leaf__4{
+    background-image: url(../img/leaf__4.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: calc(266px / 1.75);
+    height: calc(458px / 1.75);
+    position: absolute;
+    right: -3%;
+    bottom: 20%;
+}
+.leaf__5{
+    background-image: url(../img/leaf__5.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: calc(1571px / 2);
+    height: calc(1050px / 2);
+    position: absolute;
+    right: -5%;
+    bottom: -5%;
+}
+.leaf__6{
+    background-image: url(../img/leaf__6.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: calc(391px / 1.5);
+    height: calc(504px / 1.5);
+    position: absolute;
+    right: -0%;
+    bottom: -3%;
+}
+.leaf__7{
+    background-image: url(../img/leaf__7.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: calc(311px / 1.25);
+    height: calc(298px / 1.25);
+    position: absolute;
+    left: -2%;
+    bottom: -3%;
+    rotate: -5deg;
+}
+.leaf__8{
+    background-image: url(../img/leaf__8.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: calc(427px / 2.25);
+    height: calc(747px / 2.25);
+    position: absolute;
+    left: -5%;
+    bottom: 10%;
+}
+.leaf__9{
+    background-image: url(../img/leaf__9.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: calc(469px / 1.75);
+    height: calc(463px / 1.75);
+    position: absolute;
+    left: 0%;
+    bottom: -3%;
+}
+.text_center{
+    width: 100%;
+    text-align: center;
+}
+.text_first {
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Quesha', sans-serif;
+    font-size: 1.2em;
+    letter-spacing: 0.2em;
+    color: #303030;
+    position: absolute;
+    top: 12%;
+}
+.name_first {
+    -webkit-font-smoothing: antialiased;
+    font-family: "Samantha Upright";
+    font-size: 5em;
+    color: #303030;
+    position: absolute;
+    top: 18%;
+}
+.and{
+    -webkit-font-smoothing: antialiased;
+    font-family: "Samantha Upright";
+    font-size: 6em;
+    color: #FFAD00;
+    opacity: 0.5;
+    position: absolute;
+    top: 24%;
+}
+.name_second {
+    -webkit-font-smoothing: antialiased;
+    font-family: "Samantha Upright";
+    font-size: 5em;
+    color: #303030;
+    position: absolute;
+    top: 30%;
+}
+.text_second {
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Quesha', sans-serif;
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    color: #303030;
+    position: absolute;
+    top: 43%;
+}
+.text_day {
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Quesha', sans-serif;
+    font-size: 1.4em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    color: #303030;
+    position: absolute;
+    top: 50%;
+}
+.text_date {
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Quesha', sans-serif;
+    font-size: 2.25em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    color: #303030;
+    position: absolute;
+    top: 53%;
+}
+.text_time {
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Quesha', sans-serif;
+    font-size: 1.4em;
+    letter-spacing: 0.1em;
+    color: #303030;
+    position: absolute;
+    top: 62%;
+}
+.text_venue {
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Quesha', sans-serif;
+    font-size: 2.0em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    color: #303030;
+    position: absolute;
+    top: 68%;
+}
+.text_address {
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Quesha', sans-serif;
+    font-size: 1.4em;
+    letter-spacing: 0.1em;
+    color: #303030;
+    position: absolute;
+    top: 72%;
+}
+.text_footnote{
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Quesha', sans-serif;
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    color: #303030;
+    opacity: 1.0;
+    position: absolute;
+    top: 80%;
+}
+               
+#bubble-canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.vines-swing-8s {
+    -webkit-animation: vines 8s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -moz-animation: vines 8s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    animation: vines 8s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.vines-swing-7s {
+    -webkit-animation: vines 7s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -moz-animation: vines 7s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    animation: vines 7s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.vines-swing-6s {
+    -webkit-animation: vines 6s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -moz-animation: vines 6s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    animation: vines 6s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.vines-swing-5s {
+    -webkit-animation: vines 5s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -moz-animation: vines 5s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    animation: vines 5s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.about .panel header:before {
+    background-size: calc(416px/1.5) calc(309px/1.5); 
+}
+
+@keyframes vines {
+    0% {
+        -webkit-transform: translate3d(10%,0,0) rotateZ(5deg);
+        -moz-transform: translate3d(10%,0,0) rotateZ(5deg);
+        transform: translate3d(10%,0,0) rotateZ(5deg);
+    }
+
+    100% {
+        -webkit-transform: translate3d(-10%,0,0) rotateZ(-5deg);
+        -moz-transform: translate3d(-10%,0,0) rotateZ(-5deg);
+        transform: translate3d(-10%,0,0) rotateZ(-5deg);
+    }
+}
+
+.effect-pulse {
+    -webkit-animation: pulse 1.5s ease infinite;
+    -moz-animation: pulse 1.5s ease infinite;
+    animation: pulse 1.5s ease infinite;
+  }
+  
+  @-webkit-keyframes pulse {
+    0% {
+      -webkit-transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.25);
+    }
+    100% {
+      -webkit-transform: scale(1);
+    }
+  }
+  @-moz-keyframes pulse {
+    0% {
+      -moz-transform: scale(1);
+    }
+    50% {
+      -moz-transform: scale(1.25);
+    }
+    100% {
+      -moz-transform: scale(1);
+    }
+  }
+  @keyframes pulse {
+    0% {
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      -o-transform: scale(1);
+      transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.25);
+      -moz-transform: scale(1.25);
+      -ms-transform: scale(1.25);
+      -o-transform: scale(1.25);
+      transform: scale(1.25);
+    }
+    100% {
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      -o-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+
+/* Media Query */
+/* X-Small devices (portrait phones) */
+@media only screen and (max-width: 320px) and (orientation:portrait) { 
+    .background_1 {
+        background: url(../img/Background.jpg) no-repeat;
+        background-size: cover;
+        position: absolute;
+        width: 110%;
+        min-height: 110%;
+        left: -5%;
+        top: -5%; }
+    .vine_bg_1{
+        background-image: url(../img/vine_bg_1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(754px / 3.5);
+        height: calc(1502px / 3.5);
+        left: -2%;
+        top: -2%;
+        position: absolute;
+    }
+    .vine_bg_2{
+        background-image: url(../img/vine_bg_2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(650px / 3.5);
+        height: calc(1143px / 3.5);
+        position: absolute;
+        right: -3%;
+        bottom: -3%;
+    }
+    .vine_bg_3{
+        background-image: url(../img/vine_bg_3.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(938px / 4.5);
+        height: calc(1031px / 4.5);
+        position: absolute;
+        right: -3%;
+        top: -3%;
+    }
+    .vine_bg_4{
+        background-image: url(../img/vine_bg_4.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(543px / 3.5);
+        height: calc(884px / 3.5);
+        position: absolute;
+        left: -2%;
+        bottom: -2%;
+        opacity: 0.5;
+    }
+    .frame__1{
+        background-image: url(../img/frame__1.png);
+        background-repeat: no-repeat;
+        background-size: 98% 80%;
+        width: 90%;
+        min-height: 100%;
+        position: absolute;
+        top: 12%;
+        left: 6%;
+    }
+    .vine__1{
+        background-image: url(../img/vine__1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(229px / 3);
+        height: calc(737px / 3);
+        left: -5%;
+        top: 10%;
+        position: absolute;
+    }
+    .vine__2{
+        background-image: url(../img/vine__2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(436px / 3.5);
+        height: calc(364px / 3.5);
+        left: -8%;
+        top: 10%;
+        position: absolute;
+    }
+    .vine__3{
+        background-image: url(../img/vine__3.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(403px / 3.5);
+        height: calc(402px / 3.5);
+        left: -12%;
+        top: 0%;
+        position: absolute;
+    }
+    .vine__4{
+        background-image: url(../img/vine__4.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(529px / 3.5);
+        height: calc(360px / 3.5);
+        left: -3%;
+        top: -5%;
+        position: absolute;
+    }
+    .flower__1{
+        background-image: url(../img/flower__1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(663px / 4);
+        height: calc(360px / 4);
+        left: 5%;
+        top: -2%;
+        position: absolute;
+    }
+    .flower__2{
+        background-image: url(../img/flower__2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(388px / 3.5);
+        height: calc(183px / 3.5);
+        left: -3%;
+        top: -3%;
+        position: relative;
+        background-repeat: no-repeat;
+    }
+    .flower__3{
+        background-image: url(../img/flower__3.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(496px / 4.5);
+        height: calc(630px / 4.5);
+        left: -8%;
+        top: -5%;
+        position: relative;
+    }
+    .flower__4{
+        background-image: url(../img/flower__4.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(365px / 3);
+        height: calc(557px / 3);
+        left: -8%;
+        top: 5%;
+        position: relative;
+        rotate: -5deg;
+    }
+    .flower__5{
+        background-image: url(../img/flower__5.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(646px / 6);
+        height: calc(2070px / 6);
+        right: -3%;
+        top: 2%;
+        position: absolute;
+        rotate: -5deg;
+    }
+    .leaf__1{
+        background-image: url(../img/leaf__1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(422px / 2);
+        height: calc(144px / 2);
+        position: absolute;
+        right: -5%;
+        bottom: -5%;
+        rotate: 20deg;
+    }
+    .leaf__2{
+        background-image: url(../img/leaf__2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(306px / 4);
+        height: calc(472px / 4);
+        position: absolute;
+        right: -3%;
+        bottom: -3%;
+    }
+    .leaf__3{
+        background-image: url(../img/leaf__3.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(306px / 4);
+        height: calc(417px / 4);
+        position: absolute;
+        right: -5%;
+        bottom: 8%;
+    }
+    .leaf__4{
+        background-image: url(../img/leaf__4.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(266px / 3.5);
+        height: calc(458px / 3.5);
+        position: absolute;
+        right: -5%;
+        bottom: 15%;
+    }
+    .leaf__5{
+        background-image: url(../img/leaf__5.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(1571px / 6);
+        height: calc(1050px / 6);
+        position: absolute;
+        right: -5%;
+        bottom: -5%;
+    }
+    .leaf__6{
+        background-image: url(../img/leaf__6.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(391px / 3.5);
+        height: calc(504px / 3.5);
+        position: absolute;
+        right: -5%;
+        bottom: -3%;
+    }
+    .leaf__7{
+        background-image: url(../img/leaf__7.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(311px / 3);
+        height: calc(298px / 3);
+        position: absolute;
+        left: -2%;
+        bottom: -3%;
+        rotate: -5deg;
+    }
+    .leaf__8{
+        background-image: url(../img/leaf__8.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(427px / 5);
+        height: calc(747px / 5);
+        position: absolute;
+        left: -5%;
+        bottom: 10%;
+    }
+    .leaf__9{
+        background-image: url(../img/leaf__9.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(469px / 3.5);
+        height: calc(463px / 3.5);
+        position: absolute;
+        left: 3%;
+        bottom: -3%;
+    }
+    .text_center{
+        width: 100%;
+        text-align: center;
+    }
+    .text_first {
+        font-family: 'Quesha', sans-serif;
+        font-size: 4vw;
+        letter-spacing: 0.2em;
+        color: #303030;
+        position: absolute;
+        top: 18%;
+    }
+    .name_first {
+        font-family: "Samantha Upright";
+        font-size: 4.25em;
+        color: #303030;
+        position: absolute;
+        top: 23%;
+    }
+    .and{
+        font-family: "Samantha Upright";
+        font-size: 5em;
+        color: #FFAD00;
+        opacity: 0.5;
+        position: absolute;
+        top: 30%;
+    }
+    .name_second {
+        font-family: "Samantha Upright";
+        font-size: 4.25em;
+        color: #303030;
+        position: absolute;
+        top: 36%;
+    }
+    .text_second {
+        font-family: 'Quesha', sans-serif;
+        font-size: 4vw;
+        letter-spacing: 0.1em;
+        color: #303030;
+        position: absolute;
+        top: 48%;
+    }
+    .text_day {
+        font-family: 'Quesha', sans-serif;
+        font-size: 1.2em;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        color: #303030;
+        position: absolute;
+        top: 53%;
+    }
+    .text_date {
+        font-family: 'Quesha', sans-serif;
+        font-size: 1.6em;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        color: #303030;
+        position: absolute;
+        top: 56%;
+    }
+    .text_time {
+        font-family: 'Quesha', sans-serif;
+        font-size: 1.2em;
+        letter-spacing: 0.1em;
+        color: #303030;
+        position: absolute;
+        top: 62%;
+    }
+    .text_venue {
+        font-family: 'Quesha', sans-serif;
+        font-size: 1.4em;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        color: #303030;
+        position: absolute;
+        top: 67%;
+    }
+    .text_address {
+        font-family: 'Quesha', sans-serif;
+        font-size: 1.2em;
+        letter-spacing: 0.1em;
+        color: #303030;
+        position: absolute;
+        top: 71%;
+    }
+    .text_footnote{
+        font-family: 'Quesha', sans-serif;
+        font-size: 1.1em;
+        letter-spacing: 0.1em;
+        color: #303030;
+        opacity: 1.0;
+        position: absolute;
+        top: 77%;
+    }
+}
+
+/* Small devices (Portrait phones) */
+@media only screen and (min-width: 320.02px) and (max-width: 460px) and (orientation:portrait) { 
+    .background_1 {
+        background: url(../img/Background.jpg) no-repeat;
+        background-size: cover;
+        position: absolute;
+        width: 110%;
+        min-height: 110%;
+        left: -5%;
+        top: -5%; }
+    .vine_bg_1{
+        background-image: url(../img/vine_bg_1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(754px / 2.4);
+        height: calc(1502px / 2.4);
+        left: -2%;
+        top: -2%;
+        position: absolute;
+    }
+    .vine_bg_2{
+        background-image: url(../img/vine_bg_2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(650px / 2);
+        height: calc(1143px / 2);
+        position: absolute;
+        right: -3%;
+        bottom: -3%;
+    }
+    .vine_bg_3{
+        background-image: url(../img/vine_bg_3.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(938px / 3);
+        height: calc(1031px / 3);
+        position: absolute;
+        right: -3%;
+        top: -3%;
+    }
+    .vine_bg_4{
+        background-image: url(../img/vine_bg_4.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(543px / 2);
+        height: calc(884px / 2);
+        position: absolute;
+        left: -2%;
+        bottom: -2%;
+        opacity: 0.5;
+    }
+    .frame__1{
+        background-image: url(../img/frame__1.png);
+        background-repeat: no-repeat;
+        background-size: 98% 80%;
+        width: 90%;
+        min-height: 100%;
+        position: absolute;
+        top: 12%;
+        left: 6%;
+    }
+    .vine__1{
+        background-image: url(../img/vine__1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(229px / 2.5);
+        height: calc(737px / 2.5);
+        left: -5%;
+        top: 10%;
+        position: absolute;
+    }
+    .vine__2{
+        background-image: url(../img/vine__2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(436px / 3);
+        height: calc(364px / 3);
+        left: -8%;
+        top: 8%;
+        position: absolute;
+    }
+    .vine__3{
+        background-image: url(../img/vine__3.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(403px / 2.5);
+        height: calc(402px / 2.5);
+        left: -8%;
+        top: 3%;
+        position: absolute;
+    }
+    .vine__4{
+        background-image: url(../img/vine__4.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(529px / 3);
+        height: calc(360px / 3);
+        left: -3%;
+        top: -5%;
+        position: absolute;
+    }
+    .flower__1{
+        background-image: url(../img/flower__1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(663px / 3.5);
+        height: calc(360px / 3.5);
+        left: 5%;
+        top: -2%;
+        position: absolute;
+    }
+    .flower__2{
+        background-image: url(../img/flower__2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(388px / 3);
+        height: calc(183px / 3);
+        left: -3%;
+        top: -3%;
+        position: relative;
+        background-repeat: no-repeat;
+    }
+    .flower__3{
+        background-image: url(../img/flower__3.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(496px / 4);
+        height: calc(630px / 4);
+        left: -8%;
+        top: -5%;
+        position: relative;
+    }
+    .flower__4{
+        background-image: url(../img/flower__4.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(365px / 3);
+        height: calc(557px / 3);
+        left: -5%;
+        top: 5%;
+        position: relative;
+        rotate: -5deg;
+    }
+    .flower__5{
+        background-image: url(../img/flower__5.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(646px / 5);
+        height: calc(2070px / 5);
+        right: -3%;
+        top: 2%;
+        position: absolute;
+        rotate: -5deg;
+    }
+    .leaf__1{
+        background-image: url(../img/leaf__1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(422px / 1.25);
+        height: calc(144px / 1.25);
+        position: absolute;
+        right: -5%;
+        bottom: -5%;
+        rotate: 20deg;
+    }
+    .leaf__2{
+        background-image: url(../img/leaf__2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(306px / 3);
+        height: calc(472px / 3);
+        position: absolute;
+        right: -3%;
+        bottom: -3%;
+    }
+    .leaf__3{
+        background-image: url(../img/leaf__3.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(306px / 3);
+        height: calc(417px / 3);
+        position: absolute;
+        right: -5%;
+        bottom: 8%;
+    }
+    .leaf__4{
+        background-image: url(../img/leaf__4.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(266px / 2.75);
+        height: calc(458px / 2.75);
+        position: absolute;
+        right: -5%;
+        bottom: 15%;
+    }
+    .leaf__5{
+        background-image: url(../img/leaf__5.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(1571px / 5);
+        height: calc(1050px / 5);
+        position: absolute;
+        right: -5%;
+        bottom: -5%;
+    }
+    .leaf__6{
+        background-image: url(../img/leaf__6.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(391px / 2.5);
+        height: calc(504px / 2.5);
+        position: absolute;
+        right: -5%;
+        bottom: -3%;
+    }
+    .leaf__7{
+        background-image: url(../img/leaf__7.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(311px / 2);
+        height: calc(298px / 2);
+        position: absolute;
+        left: -2%;
+        bottom: -3%;
+        rotate: -5deg;
+    }
+    .leaf__8{
+        background-image: url(../img/leaf__8.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(427px / 4);
+        height: calc(747px / 4);
+        position: absolute;
+        left: -5%;
+        bottom: 10%;
+    }
+    .leaf__9{
+        background-image: url(../img/leaf__9.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(469px / 2.25);
+        height: calc(463px / 2.25);
+        position: absolute;
+        left: 0%;
+        bottom: -3%;
+    }
+    .text_center{
+        width: 100%;
+        text-align: center;
+    }
+    .text_first {
+        font-family: 'Quesha', sans-serif;
+        font-size: 1.2em;
+        letter-spacing: 0.2em;
+        color: #303030;
+        position: absolute;
+        top: 23%;
+    }
+    .name_first {
+        font-family: "Samantha Upright";
+        font-size: 4.5em;
+        color: #303030;
+        position: absolute;
+        top: 27%;
+    }
+    .and{
+        font-family: "Samantha Upright";
+        font-size: 6em;
+        color: #FFAD00;
+        opacity: 0.5;
+        position: absolute;
+        top: 32%;
+    }
+    .name_second {
+        font-family: "Samantha Upright";
+        font-size: 4.5em;
+        color: #303030;
+        position: absolute;
+        top: 38%;
+    }
+    .text_second {
+        font-family: 'Quesha', sans-serif;
+        font-size: 1.2em;
+        letter-spacing: 0.1em;
+        color: #303030;
+        position: absolute;
+        top: 47%;
+    }
+    .text_day {
+        font-family: 'Quesha', sans-serif;
+        font-size: 1.2em;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        color: #303030;
+        position: absolute;
+        top: 52%;
+    }
+    .text_date {
+        font-family: 'Quesha', sans-serif;
+        font-size: 1.6em;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        color: #303030;
+        position: absolute;
+        top: 54%;
+    }
+    .text_time {
+        font-family: 'Quesha', sans-serif;
+        font-size: 1.2em;
+        letter-spacing: 0.1em;
+        color: #303030;
+        position: absolute;
+        top: 60%;
+    }
+    .text_venue {
+        font-family: 'Quesha', sans-serif;
+        font-size: 1.4em;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        color: #303030;
+        position: absolute;
+        top: 65%;
+    }
+    .text_address {
+        font-family: 'Quesha', sans-serif;
+        font-size: 1.2em;
+        letter-spacing: 0.1em;
+        color: #303030;
+        position: absolute;
+        top: 68%;
+    }
+    .text_footnote{
+        font-family: 'Quesha', sans-serif;
+        font-size: 1.1em;
+        letter-spacing: 0.1em;
+        color: #303030;
+        opacity: 1.0;
+        position: absolute;
+        top: 73%;
+    }
+}
+
+/* Tablet devices */
+@media only screen and (min-width: 460.02px) and (max-width: 768px) and (orientation:portrait) { 
+    .background_1 {
+        background: url(../img/Background.jpg) no-repeat;
+        background-size: cover;
+        position: absolute;
+        width: 110%;
+        min-height: 110%;
+        left: -5%;
+        top: -5%; }
+    .vine_bg_1{
+        background-image: url(../img/vine_bg_1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(754px / 1.5);
+        height: calc(1502px / 1.5);
+        left: -2%;
+        top: -2%;
+        position: absolute;
+    }
+    .vine_bg_2{
+        background-image: url(../img/vine_bg_2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(650px / 1.25);
+        height: calc(1143px / 1.25);
+        position: absolute;
+        right: -3%;
+        bottom: -3%;
+    }
+    .vine_bg_3{
+        background-image: url(../img/vine_bg_3.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(938px / 1.5);
+        height: calc(1031px / 1.5);
+        position: absolute;
+        right: -3%;
+        top: -3%;
+    }
+    .vine_bg_4{
+        background-image: url(../img/vine_bg_4.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(543px / 1.25);
+        height: calc(884px / 1.25);
+        position: absolute;
+        left: -2%;
+        bottom: -2%;
+        opacity: 0.5;
+    }
+    .frame__1{
+        background-image: url(../img/frame__1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 90%;
+        min-height: 90%;
+        position: absolute;
+        top: 5%;
+        left: 12.5%;
+    }
+    .vine__1{
+        background-image: url(../img/vine__1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(229px / 1.25);
+        height: calc(737px / 1.25);
+        left: -5%;
+        top: 10%;
+        position: absolute;
+    }
+    .vine__2{
+        background-image: url(../img/vine__2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(436px / 1.5);
+        height: calc(364px / 1.5);
+        left: -5%;
+        top: 8%;
+        position: absolute;
+    }
+    .vine__3{
+        background-image: url(../img/vine__3.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(403px / 1.5);
+        height: calc(402px / 1.5);
+        left: -8%;
+        top: 3%;
+        position: absolute;
+    }
+    .vine__4{
+        background-image: url(../img/vine__4.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(529px / 2);
+        height: calc(360px / 2);
+        left: -3%;
+        top: -5%;
+        position: absolute;
+    }
+    .flower__1{
+        background-image: url(../img/flower__1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(663px / 2.5);
+        height: calc(360px / 2.5);
+        left: 5%;
+        top: -2%;
+        position: absolute;
+    }
+    .flower__2{
+        background-image: url(../img/flower__2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(388px / 1.5);
+        height: calc(183px / 1.5);
+        left: -3%;
+        top: -3%;
+        position: relative;
+        background-repeat: no-repeat;
+    }
+    .flower__3{
+        background-image: url(../img/flower__3.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(496px / 2);
+        height: calc(630px / 2);
+        left: -8%;
+        top: -5%;
+        position: relative;
+    }
+    .flower__4{
+        background-image: url(../img/flower__4.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(365px / 1.5);
+        height: calc(557px / 1.5);
+        left: -5%;
+        top: 5%;
+        position: relative;
+        rotate: -5deg;
+    }
+    .flower__5{
+        background-image: url(../img/flower__5.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(646px / 2.5);
+        height: calc(2070px / 2.5);
+        right: -3%;
+        top: 2%;
+        position: absolute;
+        rotate: -5deg;
+    }
+    .leaf__1{
+        background-image: url(../img/leaf__1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(422px / 1);
+        height: calc(144px / 1);
+        position: absolute;
+        right: -0%;
+        bottom: -5%;
+        rotate: 15deg;
+    }
+    .leaf__2{
+        background-image: url(../img/leaf__2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(306px / 1.5);
+        height: calc(472px / 1.5);
+        position: absolute;
+        right: -3%;
+        bottom: -3%;
+    }
+    .leaf__3{
+        background-image: url(../img/leaf__3.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(306px / 1.5);
+        height: calc(417px / 1.5);
+        position: absolute;
+        right: -5%;
+        bottom: 8%;
+    }
+    .leaf__4{
+        background-image: url(../img/leaf__4.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(266px / 1.75);
+        height: calc(458px / 1.75);
+        position: absolute;
+        right: -3%;
+        bottom: 20%;
+    }
+    .leaf__5{
+        background-image: url(../img/leaf__5.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(1571px / 2);
+        height: calc(1050px / 2);
+        position: absolute;
+        right: -5%;
+        bottom: -5%;
+    }
+    .leaf__6{
+        background-image: url(../img/leaf__6.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(391px / 1.5);
+        height: calc(504px / 1.5);
+        position: absolute;
+        right: -0%;
+        bottom: -3%;
+    }
+    .leaf__7{
+        background-image: url(../img/leaf__7.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(311px / 1.5);
+        height: calc(298px / 1.5);
+        position: absolute;
+        left: -2%;
+        bottom: -3%;
+        rotate: -5deg;
+    }
+    .leaf__8{
+        background-image: url(../img/leaf__8.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(427px / 2.25);
+        height: calc(747px / 2.25);
+        position: absolute;
+        left: -5%;
+        bottom: 10%;
+    }
+    .leaf__9{
+        background-image: url(../img/leaf__9.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(469px / 1.75);
+        height: calc(463px / 1.75);
+        position: absolute;
+        left: 0%;
+        bottom: -3%;
+    }
+    .text_center{
+        width: 100%;
+        text-align: center;
+    }
+    .text_first {
+        font-family: 'Quesha', sans-serif;
+        font-size: 1.5em;
+        letter-spacing: 0.2em;
+        color: #303030;
+        position: absolute;
+        top: 12%;
+    }
+    .name_first {
+        font-family: "Samantha Upright";
+        font-size: 7em;
+        color: #303030;
+        position: absolute;
+        top: 17%;
+    }
+    .and{
+        font-family: "Samantha Upright";
+        font-size: 8em;
+        color: #FFAD00;
+        opacity: 0.5;
+        position: absolute;
+        top: 25%;
+    }
+    .name_second {
+        font-family: "Samantha Upright";
+        font-size: 7em;
+        color: #303030;
+        position: absolute;
+        top: 32%;
+    }
+    .text_second {
+        font-family: 'Quesha', sans-serif;
+        font-size: 1.5em;
+        letter-spacing: 0.1em;
+        color: #303030;
+        position: absolute;
+        top: 48%;
+    }
+    .text_day {
+        font-family: 'Quesha', sans-serif;
+        font-size: 2em;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        color: #303030;
+        position: absolute;
+        top: 53%;
+    }
+    .text_date {
+        font-family: 'Quesha', sans-serif;
+        font-size: 2.75em;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        color: #303030;
+        position: absolute;
+        top: 56%;
+    }
+    .text_time {
+        font-family: 'Quesha', sans-serif;
+        font-size: 2em;
+        letter-spacing: 0.1em;
+        color: #303030;
+        position: absolute;
+        top: 63%;
+    }
+    .text_venue {
+        font-family: 'Quesha', sans-serif;
+        font-size: 2em;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        color: #303030;
+        position: absolute;
+        top: 69%;
+    }
+    .text_address {
+        font-family: 'Quesha', sans-serif;
+        font-size: 1.5em;
+        letter-spacing: 0.1em;
+        color: #303030;
+        position: absolute;
+        top: 73%;
+    }
+    .text_footnote{
+        font-family: 'Quesha', sans-serif;
+        font-size: 1.5em;
+        letter-spacing: 0.1em;
+        color: #303030;
+        opacity: 1.0;
+        position: absolute;
+        top: 80%;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media only screen and (min-width: 768.02px) and (max-width: 1024px) and (orientation:portrait) { 
+    .background_1 {
+        background: url(../img/Background.jpg) no-repeat;
+        background-size: cover;
+        position: absolute;
+        width: 110%;
+        min-height: 110%;
+        left: -5%;
+        top: -5%; }
+    .vine_bg_1{
+        background-image: url(../img/vine_bg_1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(754px / 1.5);
+        height: calc(1502px / 1.5);
+        left: -2%;
+        top: -2%;
+        position: absolute;
+    }
+    .vine_bg_2{
+        background-image: url(../img/vine_bg_2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(650px / 1.25);
+        height: calc(1143px / 1.25);
+        position: absolute;
+        right: -3%;
+        bottom: -3%;
+    }
+    .vine_bg_3{
+        background-image: url(../img/vine_bg_3.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(938px / 1.5);
+        height: calc(1031px / 1.5);
+        position: absolute;
+        right: -3%;
+        top: -3%;
+    }
+    .vine_bg_4{
+        background-image: url(../img/vine_bg_4.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(543px / 1.25);
+        height: calc(884px / 1.25);
+        position: absolute;
+        left: -2%;
+        bottom: -2%;
+        opacity: 0.5;
+    }
+    .frame__1{
+        background-image: url(../img/frame__1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 90%;
+        min-height: 90%;
+        position: absolute;
+        top: 5%;
+        left: 12.5%;
+    }
+    .vine__1{
+        background-image: url(../img/vine__1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(229px / 1.25);
+        height: calc(737px / 1.25);
+        left: -5%;
+        top: 10%;
+        position: absolute;
+    }
+    .vine__2{
+        background-image: url(../img/vine__2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(436px / 1.5);
+        height: calc(364px / 1.5);
+        left: -5%;
+        top: 8%;
+        position: absolute;
+    }
+    .vine__3{
+        background-image: url(../img/vine__3.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(403px / 1.5);
+        height: calc(402px / 1.5);
+        left: -8%;
+        top: 3%;
+        position: absolute;
+    }
+    .vine__4{
+        background-image: url(../img/vine__4.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(529px / 2);
+        height: calc(360px / 2);
+        left: -3%;
+        top: -5%;
+        position: absolute;
+    }
+    .flower__1{
+        background-image: url(../img/flower__1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(663px / 2.5);
+        height: calc(360px / 2.5);
+        left: 5%;
+        top: -2%;
+        position: absolute;
+    }
+    .flower__2{
+        background-image: url(../img/flower__2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(388px / 1.5);
+        height: calc(183px / 1.5);
+        left: -3%;
+        top: -3%;
+        position: relative;
+        background-repeat: no-repeat;
+    }
+    .flower__3{
+        background-image: url(../img/flower__3.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(496px / 2);
+        height: calc(630px / 2);
+        left: -8%;
+        top: -5%;
+        position: relative;
+    }
+    .flower__4{
+        background-image: url(../img/flower__4.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(365px / 1.5);
+        height: calc(557px / 1.5);
+        left: -5%;
+        top: 5%;
+        position: relative;
+        rotate: -5deg;
+    }
+    .flower__5{
+        background-image: url(../img/flower__5.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(646px / 2.5);
+        height: calc(2070px / 2.5);
+        right: -3%;
+        top: 2%;
+        position: absolute;
+        rotate: -5deg;
+    }
+    .leaf__1{
+        background-image: url(../img/leaf__1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(422px / 1);
+        height: calc(144px / 1);
+        position: absolute;
+        right: -0%;
+        bottom: -5%;
+        rotate: 15deg;
+    }
+    .leaf__2{
+        background-image: url(../img/leaf__2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(306px / 1.5);
+        height: calc(472px / 1.5);
+        position: absolute;
+        right: -3%;
+        bottom: -3%;
+    }
+    .leaf__3{
+        background-image: url(../img/leaf__3.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(306px / 1.5);
+        height: calc(417px / 1.5);
+        position: absolute;
+        right: -5%;
+        bottom: 8%;
+    }
+    .leaf__4{
+        background-image: url(../img/leaf__4.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(266px / 1.75);
+        height: calc(458px / 1.75);
+        position: absolute;
+        right: -3%;
+        bottom: 20%;
+    }
+    .leaf__5{
+        background-image: url(../img/leaf__5.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(1571px / 2);
+        height: calc(1050px / 2);
+        position: absolute;
+        right: -5%;
+        bottom: -5%;
+    }
+    .leaf__6{
+        background-image: url(../img/leaf__6.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(391px / 1.5);
+        height: calc(504px / 1.5);
+        position: absolute;
+        right: -0%;
+        bottom: -3%;
+    }
+    .leaf__7{
+        background-image: url(../img/leaf__7.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(311px / 1.5);
+        height: calc(298px / 1.5);
+        position: absolute;
+        left: -2%;
+        bottom: -3%;
+        rotate: -5deg;
+    }
+    .leaf__8{
+        background-image: url(../img/leaf__8.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(427px / 2.25);
+        height: calc(747px / 2.25);
+        position: absolute;
+        left: -5%;
+        bottom: 10%;
+    }
+    .leaf__9{
+        background-image: url(../img/leaf__9.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: calc(469px / 1.75);
+        height: calc(463px / 1.75);
+        position: absolute;
+        left: 0%;
+        bottom: -3%;
+    }
+    .text_center{
+        width: 100%;
+        text-align: center;
+    }
+    .text_first {
+        font-family: 'Quesha', sans-serif;
+        font-size: 1.5em;
+        letter-spacing: 0.2em;
+        color: #303030;
+        position: absolute;
+        top: 12%;
+    }
+    .name_first {
+        font-family: "Samantha Upright";
+        font-size: 7em;
+        color: #303030;
+        position: absolute;
+        top: 17%;
+    }
+    .and{
+        font-family: "Samantha Upright";
+        font-size: 8em;
+        color: #FFAD00;
+        opacity: 0.5;
+        position: absolute;
+        top: 25%;
+    }
+    .name_second {
+        font-family: "Samantha Upright";
+        font-size: 7em;
+        color: #303030;
+        position: absolute;
+        top: 32%;
+    }
+    .text_second {
+        font-family: 'Quesha', sans-serif;
+        font-size: 1.5em;
+        letter-spacing: 0.1em;
+        color: #303030;
+        position: absolute;
+        top: 46%;
+    }
+    .text_day {
+        font-family: 'Quesha', sans-serif;
+        font-size: 2em;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        color: #303030;
+        position: absolute;
+        top: 52%;
+    }
+    .text_date {
+        font-family: 'Quesha', sans-serif;
+        font-size: 2.75em;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        color: #303030;
+        position: absolute;
+        top: 55%;
+    }
+    .text_time {
+        font-family: 'Quesha', sans-serif;
+        font-size: 2em;
+        letter-spacing: 0.1em;
+        color: #303030;
+        position: absolute;
+        top: 63%;
+    }
+    .text_venue {
+        font-family: 'Quesha', sans-serif;
+        font-size: 2.25em;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        color: #303030;
+        position: absolute;
+        top: 69%;
+    }
+    .text_address {
+        font-family: 'Quesha', sans-serif;
+        font-size: 2em;
+        letter-spacing: 0.1em;
+        color: #303030;
+        position: absolute;
+        top: 73%;
+    }
+    .text_footnote{
+        font-family: 'Quesha', sans-serif;
+        font-size: 1.75em;
+        letter-spacing: 0.1em;
+        color: #303030;
+        opacity: 1.0;
+        position: absolute;
+        top: 80%;
+    }
+}
+
