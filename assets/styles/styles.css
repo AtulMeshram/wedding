@@ -757,7 +757,7 @@ button {
         line-height: 1.3em; }
 
   .toggle {
-    margin: -28px;
+    /* margin: -28px; */
     bottom: 10%; }
 
   }
@@ -778,7 +778,7 @@ button {
     padding: 1.2em 0 1.3em; }
 
   .toggle {
-    margin: -24px;
+    /* margin: -24px; */
     bottom: 10%; }
 }
 @media all and (min-width: 1200px) {
