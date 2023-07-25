@@ -271,7 +271,7 @@
     letter-spacing: 0.2em;
     color: #303030;
     position: absolute;
-    top: 12%;
+    top: 10%;
 }
 .name_first {
     -webkit-font-smoothing: antialiased;
@@ -279,7 +279,7 @@
     font-size: 5em;
     color: #303030;
     position: absolute;
-    top: 18%;
+    top: 17%;
 }
 .and{
     -webkit-font-smoothing: antialiased;
@@ -288,7 +288,7 @@
     color: #FFAD00;
     opacity: 0.5;
     position: absolute;
-    top: 24%;
+    top: 23%;
 }
 .name_second {
     -webkit-font-smoothing: antialiased;
@@ -296,7 +296,7 @@
     font-size: 5em;
     color: #303030;
     position: absolute;
-    top: 30%;
+    top: 29%;
 }
 .text_second {
     -webkit-font-smoothing: antialiased;
